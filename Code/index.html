@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="utility.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="pics/server.png">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"rel="stylesheet">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>RED-ITZ</title>
     <style>
         .fade-in {
             animation: fadeIn 1s ease forwards;
@@ -39,7 +47,9 @@
     <div class="main">
         <div class="header">
             <button class="toggle-sidebar-btn">&#9776;</button>
-            <img src="pics/20a8fcfbdada4e6f8a76b2db2b6fcc8d.png" alt="">
+            <div class="title">
+                <h1>RED-ITZ</h1>
+            </div>
             <input type="text" placeholder="Enter your text..." class="centered-input" id="searchInput">
             <a href="login.html"><button class="login-btn">Login</button></a>
         </div>
@@ -47,11 +57,11 @@
         <div class="lower" id="lower">
             <div class="left">
                 <div class="sidebar">
-                    <div class="sidebar-item profile" id="profile">Your Profile</div>
+                    <div class="sidebar-item profile" id="profile"><a href="profile.html">Our Profile</a></div>
                     <hr class="sidebar-divider">
                     <div class="sidebar-item home">
                         <img class="invert" src="pics/home.svg" alt="">
-                        Home
+                        <a href="index.html">Home</a>
                     </div>
                     <hr class="sidebar-divider">
                     <div class="sidebar-item popular">
@@ -127,8 +137,8 @@
             </div>
             <div class="right border">
                 <div class="buttons">
-                    <button class="SCR" id="prevBtn">Previous</button>
-                    <button class="SCR" id="nextBtn">Next</button>
+                    <button class="SCR" id="prevBtn"><img src="pics/is-less-than-mathematical-sign.png" alt=""></button>
+                    <button class="SCR" id="nextBtn"><img src="pics/greater-than.png" alt=""></button>
                 </div>
                 <div class="Ppost border">
                     <div class="pp border active">
@@ -168,58 +178,103 @@
                     <div class="posts border">
                         <div class="_posts border">
                             <div class="pro">
-                                <img src="pics/pic.png" alt="">
-                                <p>your_name</p>
+                                <img src="pics/obito.jpg" alt="">
+                                <a href="profile.html"><p>Shwetank Dohroo</p></a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Indian Navy's first MH-60R sub-hunter squadron soars: All you need to know</p>
+                                <a href="#" class="read-more">Read more</a>
                             </div>
                             <div class="posts_img">
-                                <img src="pics/404.png" alt="">
+                                <img src="https://bsmedia-business--standard-com.cdn.ampproject.org/ii/w820/s/bsmedia.business-standard.com/_media/bs/img/article/2024-03/07/full/1709750606-8856.jpg?im=FeatureCrop,size=(382,233)" alt="">
                             </div>
                             <div class="actions">
-                                <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png" alt=""></button>
-                                <span class="upvote-count">0</span>
-                                <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png" alt=""></button>
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
+
                             </div>
                         </div>
                         <div class="_posts border">
                             <div class="pro">
-                                <img src="pics/pic.png" alt="">
-                                <p>your_name</p>
+                                <img src="pics/itachi.jpeg" alt="">
+                                <a href="profile.html"><p>Sidhant Singh</p></a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">'As Captain Of This Team...': Rohit Sharma Hails 'Young' Team India In Memorable Series Triumph. Watch</p>
+                                <a href="#" class="read-more">Read more</a>
                             </div>
                             <div class="posts_img">
-                                <img src="pics/404.png" alt="">
+                                <img src="https://static-toiimg-com.cdn.ampproject.org/ii/AW/s/static.toiimg.com/thumb/msid-108372082,width-400,resizemode-4/108372082.jpg" alt="">
                             </div>
                             <div class="actions">
-                                <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png" alt=""></button>
-                                <span class="upvote-count">0</span>
-                                <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png" alt=""></button>
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
                             </div>
                         </div>
                         <div class="_posts border">
                             <div class="pro">
-                                <img src="pics/pic.png" alt="">
-                                <p>your_name</p>
+                                <img src="pics/madara.jpg" alt="">
+                                <a href="profile.html"><p>Sidharth Patel</p></a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Sweden's NATO Membership Bid Nears Approval Amid Geopolitical Shift:- Sweden and Finland joining NATO ...</p>
+                                <a href="#" class="read-more">Read more</a>
                             </div>
                             <div class="posts_img">
-                                <img src="pics/404.png" alt="">
+                                <img src="https://c.ndtvimg.com/2019-11/t015ele8_nato-flags_625x300_27_November_19.jpg" alt="">
                             </div>
                             <div class="actions">
-                                <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png" alt=""></button>
-                                <span class="upvote-count">0</span>
-                                <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png" alt=""></button>
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
                             </div>
                         </div>
                         <div class="_posts border">
                             <div class="pro">
-                                <img src="pics/pic.png" alt="">
-                                <p>your_name</p>
+                                <img src="pics/sasuke.jpeg" alt="">
+                                <a href="profile.html"><p>Surya Dev</p></a>
+                            </div>
+                            <div class="description-container">
+                                <p class="description-text">Exclusive: Why Designers Chose Asymmetric Uniform For Gaganyaan Astronauts.:- NDTV's Science...</p>
+                                <a href="#" class="read-more">Read more</a>
                             </div>
                             <div class="posts_img">
-                                <img src="pics/404.png" alt="">
+                                <img src="https://c.ndtvimg.com/2024-03/tofti3b8_astronauts-uniform_625x300_09_March_24.jpeg?im=FeatureCrop,algorithm=dnn,width=650,height=400" alt="">
                             </div>
                             <div class="actions">
-                                <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png" alt=""></button>
-                                <span class="upvote-count">0</span>
-                                <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png" alt=""></button>
+                                <div class="okji">
+                                    <button class="upvote-btn invert"><img src="pics/icons8-thumbs-up-30.png"
+                                            alt=""></button>
+                                    <span class="upvote-count">0</span>
+                                    <button class="downvote-btn invert"><img src="pics/icons8-thumbs-down-30.png"
+                                            alt=""></button>
+                                </div>
+                                <button class="comment-btn invert">
+                                    <img src="pics/comment.svg" alt="">
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -325,6 +380,7 @@
             </div>
         </div>
     </div>
+
     <script>
         // Changing background
         const sidebarItems1 = document.querySelectorAll('.home',);
@@ -333,7 +389,7 @@
 
         sidebarItems1.forEach(item => {
             item.addEventListener('mouseover', function () {
-                lower.style.backgroundColor = '#101415';
+                lower.style.backgroundColor = '#F7DED0';
             });
 
             item.addEventListener('mouseout', function () {
@@ -342,7 +398,7 @@
         });
         sidebarItems2.forEach(item => {
             item.addEventListener('mouseover', function () {
-                lower.style.backgroundColor = '#362e2e';
+                lower.style.backgroundColor = '#EED3D9';
             });
 
             item.addEventListener('mouseout', function () {
@@ -422,12 +478,12 @@
                 let upvotes = 0;
 
                 upvoteBtn.addEventListener('click', function () {
-                    upvotes++;
+                    upvotes = 1;
                     upvoteCount.textContent = upvotes;
                 });
 
                 downvoteBtn.addEventListener('click', function () {
-                    upvotes--;
+                    upvotes = 0;
                     upvoteCount.textContent = upvotes;
                 });
             });
@@ -442,50 +498,38 @@
                 element.classList.add('active');
             });
         });
-        // Working of searchbar
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById('searchInput');
-            // Add event listener to detect when user presses Enter key
-            searchInput.addEventListener('keypress', function (e) {
-                if (e.key === 'Enter') {
-                    // Get the value entered by the user
-                    const searchText = searchInput.value;
-                    // You can perform any action with the entered text here, such as search functionality
-                    console.log('User searched for:', searchText);
-                    // For demonstration purposes, I'll clear the input field after the user presses Enter
-                    searchInput.value = '';
-                }
-            });
-        });
         // Seaching elements in searchbar
         document.addEventListener("DOMContentLoaded", function () {
             const searchInput = document.getElementById('searchInput');
             const sidebarItems = document.querySelectorAll('.sidebar-item');
+            const dropdownItems = document.querySelectorAll('.dropdown-container a');
             const dropdowns = document.querySelectorAll('.dropdown');
             // Add event listener to detect changes in the input field
             searchInput.addEventListener('input', function () {
-                const searchText = searchInput.value.toLowerCase();
+                let searchText = searchInput.value.toLowerCase();
                 // Loop through each sidebar item to check if it matches the search text
                 sidebarItems.forEach(item => {
                     const itemText = item.textContent.toLowerCase();
                     // If the sidebar item contains the search text, show it and open its parent dropdown
                     if (itemText.includes(searchText)) {
                         item.style.display = 'block';
-                        // Open the parent dropdown if it's not already open
-                        const dropdown = item.closest('.dropdown');
-                        if (dropdown) {
-                            dropdown.classList.add('active');
-                            const dropdownContent = dropdown.nextElementSibling;
-                            dropdownContent.classList.add('show'); // Add 'show' class first
-                            dropdownContent.style.display = 'block'; // Then change display property
-                        }
-                    } 
+                    }
                     else {
                         item.style.display = 'none';
                     }
                 });
-
-                if(searchText === '') {
+                dropdownItems.forEach(item => {
+                    let itemText = item.textContent.toLowerCase();
+                    if (itemText.includes(searchText)) {
+                        item.style.display = 'block';
+                        item.parentElement.style.display = 'block';
+                        item.parentElement.previousElementSibling.classList.add('active');
+                    }
+                    else {
+                        item.style.display = 'none';
+                    }
+                });
+                if (searchText === '') {
                     dropdowns.forEach(dropdown => {
                         dropdown.classList.remove('active');
                         const dropdownContent = dropdown.nextElementSibling;
