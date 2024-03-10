@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+:root {
+  --color1: #F8F0E5;
+  --color2: #102C57;
+  --color3: #EADBC8;
+  --color4: #DAC0A3;
+  --color5: #606C5D;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,16 +22,16 @@ html, body {
 body {
   display: grid;
   place-items: center;
-  background: rgb(235, 228, 228);
+  background: rgb(0, 0, 0);
   text-align: center;
 }
 
 .content {
   width: 330px;
   padding: 40px 30px;
-  background: #FFA559;
+  background: var(--color1);
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #FF6000, 2px 2px 5px #FF6000;
+  box-shadow: -3px -3px 20px var(--color4), 2px 2px 40px var(--color4);
   animation: slideIn 0.5s forwards;
 }
 
@@ -31,7 +39,7 @@ body {
   font-size: 33px;
   font-weight: 600;
   margin-bottom: 35px;
-  color: #595959;
+  color: var(--color5);
 }
 
 .field {
@@ -54,8 +62,8 @@ body {
   outline: none;
   border: none;
   font-size: 18px;
-  background: #FFE6C7;
-  color: #595959;
+  background: var(--color3);
+  color: var(--color5);
   border-radius: 25px;
   box-shadow: inset 2px 2px 5px #FF6000, inset -5px -5px 10px #ffffff73;
 }
@@ -66,7 +74,7 @@ body {
 
 .field span {
   position: absolute;
-  color: #595959;
+  color: var(--color5);
   width: 50px;
   line-height: 50px;
 }
@@ -96,7 +104,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #595959;
+  color: var(--color5);
   box-shadow: 2px 2px 5px #FF6000, -5px -5px 10px #ffffff73;
 }
 
@@ -107,7 +115,7 @@ button:focus {
 
 .login {
   margin: 10px 0;
-  color: #595959;
+  color: var(--color5);
   font-size: 16px;
 }
 
