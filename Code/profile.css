@@ -1,12 +1,9 @@
 :root {
-    --color1: #262020;
-    /* Black*/
-    --color2: #FF6000;
-    /*orange*/
-    --color3: #FFA559;
-    /*light orange*/
-    --color4: #FFE6C7;
-    /*beige*/
+    --color1: #F8F0E5;
+    --color2: #102C57;
+    --color3: #EADBC8;
+    --color4: #DAC0A3;
+    --color5: #606C5D;
 }
 
 body {
@@ -16,7 +13,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color1);
-    /* overflow: hidden; */
+}
+.title {
+    padding: 10px;
+}
+.title h1{
+    color: #FFD95A;
 }
 
 .header {
@@ -31,7 +33,7 @@ body {
 
 h1 {
     margin: 0;
-    color: var(--color4);
+    color: var(--color5);
     font-size: 1.5rem;
 }
 
@@ -48,12 +50,16 @@ nav li {
 
 a {
     text-decoration: none;
-    color: var(--color4);
+    color: var(--color5);
     font-weight: bold;
 }
-.main1,.main2,.main3{
+
+.main2,
+.main3,
+.main4 {
     display: none;
 }
+
 a:hover {
     color: var(--color1);
 }
@@ -72,7 +78,7 @@ a:hover {
     padding: 3rem;
     position: relative;
     transition: 0.3s ease-in-out;
-    height: 40%;
+    height: auto;
 }
 
 .profile:hover {
@@ -99,7 +105,7 @@ a:hover {
 
 .profile p {
     margin: 0.75rem 0;
-    color: var(--color1);
+    color: var(--color5);
     line-height: 1.5;
 }
 
@@ -113,7 +119,7 @@ a:hover {
 .message-button,
 .edit-button {
     background-color: var(--color4);
-    color: var(--color1);
+    color: var(--color5);
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 10px;
@@ -142,7 +148,7 @@ a:hover {
 }
 
 .social-links a {
-    color: var(--color1);
+    color: var(--color5);
     font-size: 1.2rem;
     transition: color 0.2s ease-in-out;
 }
